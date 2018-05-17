@@ -1,0 +1,41 @@
+.site-header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid #d0d0d0;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button, &__logo, .site-navigation {
+        display: inline-flex;
+        align-content: center;
+    }
+    
+    &__button  {
+        width: 30px;
+        height: 30px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__logo {
+        
+    }
+}
+.site-navigation {
+
+    &__item {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #000000;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
