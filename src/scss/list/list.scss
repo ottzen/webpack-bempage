@@ -3,18 +3,17 @@
     padding: 0;
     margin-top: 200px;
     list-style-type: none;
-
     
     &__content {
         display: flex;
-        flex-direction: row
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 .list-item {
-    width: 33%;
-    height: 400px;
-    padding: 15px;
+    width: calc(33% - 20px);
+    min-height: 450px;  
     position: relative;
 
     &__image, &__title, &__text {
@@ -32,9 +31,11 @@
     &__title {
         font-size: 20px;
         font-weight: 700;
+        margin-top: 20px;
     }
     &__text {
         font-size: 14px;
+        line-height: 20px;
     }
     &__button {
         position: absolute;

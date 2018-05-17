@@ -2,13 +2,15 @@
     position: relative;
     z-index: 3;
 
+    > .container {
+        position: relative;
+    }
+
     &__content {
-        left: 40%;
         width: 380px;
         padding: 30px;
         background-color: white;
         position: absolute;
-        top: 50%;
         right: 0;
         transform: translateY(-50%);
         box-shadow: 0px 5px 12px 3px #e0e0e0;
@@ -18,10 +20,10 @@
     }
     &__title {
         font-size: 72px;
+        font-weight: bold;
     }
     &__text {
         font-size: 16px;
-        font-style: italic;
     }
     &__button {
         float: right;
