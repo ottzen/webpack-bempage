@@ -1,16 +1,15 @@
 .spot-box {
     position: relative;
-    z-index: 3;
+    z-index: 3; 
 
-    > .container {
-        position: relative;
-    }
     &__inner {
         display: flex;
         justify-content: flex-end;
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
         width: 380px;
         padding: 30px;
         background-color: white;    
@@ -28,6 +27,6 @@
         font-size: 16px;
     }
     &__button {
-        float: right;
+        align-self: flex-end;
     }
 }

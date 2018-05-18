@@ -13,7 +13,8 @@
 .list-item {
     width: calc(33% - 20px);
     min-height: 450px;  
-    position: relative;
+    display: flex;
+    flex-direction: column;
 
     &__image, &__title, &__text {
         margin: 0;
@@ -37,8 +38,7 @@
         line-height: 20px;
     }
     &__button {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
+        margin-top: auto;
+        margin-left: auto;
     }
 }
