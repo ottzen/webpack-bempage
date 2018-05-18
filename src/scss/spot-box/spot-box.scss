@@ -5,13 +5,15 @@
     > .container {
         position: relative;
     }
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     &__content {
         width: 380px;
         padding: 30px;
-        background-color: white;
-        position: absolute;
-        right: 0;
+        background-color: white;    
         transform: translateY(-50%);
         box-shadow: 0px 5px 12px 3px #e0e0e0;
     }
